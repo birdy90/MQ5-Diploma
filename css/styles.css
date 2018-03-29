@@ -1,0 +1,127 @@
+@font-face {
+  font-family: OpenSansBold;
+  src: url('../fonts/OpenSans-Bold.ttf'),
+    url('../fonts/OpenSans-Bold.woff'),
+    url('../fonts/OpenSans-Bold.woff2');
+}
+
+@font-face {
+  font-family: OpenSansRegular;
+  src: url('../fonts/OpenSans-Regular.ttf'),
+    url('../fonts/OpenSans-Regular.woff'),
+    url('../fonts/OpenSans-Regular.woff2');
+}
+
+/* base classes */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: OpenSansRegular, sans-serif;
+  min-height: 320px;
+  width: 100%;
+  
+  font-size: 10px;
+}
+
+h1, h2 {
+  font-family: OpenSansBold, sans-serif;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #e7e7e7;
+}
+
+h2 {
+  font-size: 2.8rem;
+  color: #c1c1c1;
+}
+
+html { background-image: url('../images/template/surface_320.jpg'); }
+body { opacity: 0.2; }
+
+/* common block */
+
+.block {
+  width: 100%;
+}
+
+.block__content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+
+/* header */
+
+.block-header {
+  color: white;
+  height: 568px;
+  background-image: url('../images/football_s.png');
+}
+
+.block-header .block__content {
+  align-items: center;  
+}
+
+.block-header__logo {
+  padding: 13px;
+}
+
+/* athletes */
+
+.block-athletes {}
+
+.block-athletes .block__title {
+  flex-basis: 265px;
+}
+
+.row {
+  padding: 55px 20px;
+}
+
+.row p {
+  font-size: 1.5rem;
+}
+
+.row__title-line {
+  display: flex;
+  margin: 21px 0;
+}
+
+.row__pretitle {
+  font-family: OpenSansBold, sans-serif;
+  font-size: 1.4rem;
+  color: black;
+  display: inline-flex;
+  flex-basis: 25px;
+}
+
+.row__title {
+  display: inline-flex;
+}
+
+.block-athletes .row:nth-child(1) {
+  background-color: #fafafa;
+}
+
+.block-athletes .row:nth-child(2) {
+  background-color: #f5f4f9;
+  padding: 45px 20px;
+}
+
+.block-athletes .row:nth-child(2) .row__title-line {
+  margin: 5px 0;
+}
+
+.block-athletes .row:nth-child(3) {
+  background-color: #5e42b0;
+}
