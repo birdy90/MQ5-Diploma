@@ -14,23 +14,42 @@
 <header class='block block-header'>
     <div class='block__content'>
         <img class='block-header__logo' src='./images/surface_logo_text.png' />
-        <div>Be recruited</div>
-        <div>Play college sports</div>
-        <div>Appstore</div>
-        <div>Android</div>
+        
+        <div class='block-header__text'>
+            <h2>Be recruited</h2>
+            <h2>Play college sports</h2>
+        </div>
+        
+        <div class='store-button'>
+            <div class='store-button__inner-wrapper'>
+                <div class='store-button__icon store-button__icon--apple'></div>
+                <div class='store-button-text'>
+                    Download on the<br/><b>App store</b>
+                </div>
+            </div>
+        </div>
+        <div class='store-button'>
+            <div class='store-button__inner-wrapper'>
+                <div class='store-button__icon store-button__icon--google'></div>
+                <div class='store-button-text'>
+                    Get it on<br/><b>Google play</b>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 
-<section class='block block-athletes'>
+<section class='block thesis-block block-athletes'>
     <div class='block__content block-list'>
         <div class='block__title'>
             <h1>Athletes</h1>
-            <img src='' />
+            <img class='row__title-image' src='./images/athletes_s.png' />
         </div>
     </div>
 </section>
 
-<section class='block block-athletes'>
+<!-- разделение для того, чтобы нумерация блоков была с 0 -->
+<section class='block thesis-block block-athletes'>
     <div class='row block__row'>
         <div class='row__title-line'>
             <div class='row__pretitle'>01</div>
@@ -54,16 +73,17 @@
     </div>
 </section>
 
-<section class='block block-players'>
+<section class='block thesis-block block-players'>
     <div class='block__content block-list'>
         <div class='block__title'>
             <h1>Players</h1>
-            <img src='' />
+            <img class='row__title-image' src='./images/players_s.png' />
         </div>
     </div>
 </section>
 
-<section class='block block-players'>
+<!-- разделение для того, чтобы нумерация блоков была с 0 -->
+<section class='block thesis-block block-players'>
     <div class='row block__row'>
         <div class='row__title-line'>
             <div class='row__pretitle'>01</div>
@@ -87,43 +107,67 @@
     </div>
 </section>
 
-<section class='block'>
-    <div class='block__content block-cards'>
-        <div class='block-cards__card'>
-            <div>01</div>
-            <div>Be active</div>
-            <div>Post videos with your skills,</div>
-            <div>Like and follow others to be more popular.</div>
+<section class='block block-cards'>
+    <div class='block-cards__card'>
+        <div class='block-cards__card-title'>
+            <img class='block-cards__card-title-image' src='./images/cards_1_s.jpg' />
+            <div class='block-cards__title-counter-block'>
+                <div class='block-cards__title-counter-block--number'>01</div>
+                <div class='block-cards__title-counter-block--underline'></div>
+            </div>
         </div>
-        <div class='block-cards__card'>
-            <div>02</div>
-            <div>Find contact</div>
-            <div>Contact others to find right coach or athlete you are looking for.</div>
+        <div class='block__content'>
+            <h2 class='block-cards__title'>Be active</h2>
+            <p class='block-cards__text'>Post videos with your skills, like and follow others to be more popular.</p>
         </div>
-        <div class='block-cards__card'>
-            <div>03</div>
-            <div>Work it</div>
-            <div>Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this a enjoyable experience.</div>
-        </div>
-        <!--<div class='block-cards__card'>-->
-        <!--04-->
-        <!--Be active-->
-        <!--Post videos with your skills,-->
-        <!--Like and follow others to be more popular.-->
-        <!--</div>-->
-        <!--<div class='block-cards__card'>-->
-        <!--05-->
-        <!--Be active-->
-        <!--Post videos with your skills,-->
-        <!--Like and follow others to be more popular.-->
-        <!--</div>-->
-        <!--<div class='block-cards__card'>-->
-        <!--06-->
-        <!--Be active-->
-        <!--Post videos with your skills,-->
-        <!--Like and follow others to be more popular.-->
-        <!--</div>-->
     </div>
+
+    <div class='block-cards__card'>
+        <div class='block-cards__card-title'>
+            <img class='block-cards__card-title-image' src='./images/cards_2_s.jpg' />
+            <div class='block-cards__title-counter-block'>
+                <div class='block-cards__title-counter-block--number'>02</div>
+                <div class='block-cards__title-counter-block--underline'></div>
+            </div>
+        </div>
+        <div class='block__content'>
+            <h2 class='block-cards__title'>Find contact</h2>
+            <p class='block-cards__text'>Contact others to find right coach or athlete you are looking for.</p>
+        </div>
+    </div>
+
+    <div class='block-cards__card'>
+        <div class='block-cards__card-title'>
+            <img class='block-cards__card-title-image' src='./images/cards_3_s.jpg' />
+            <div class='block-cards__title-counter-block'>
+                <div class='block-cards__title-counter-block--number'>03</div>
+                <div class='block-cards__title-counter-block--underline'></div>
+            </div>
+        </div>
+        <div class='block__content'>
+            <h2 class='block-cards__title'>Work it</h2>
+            <p class='block-cards__text'>Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this a enjoyable experience.</p>
+        </div>
+    </div>
+    
+    <!--<div class='block-cards__card'>-->
+    <!--04-->
+    <!--Be active-->
+    <!--Post videos with your skills,-->
+    <!--Like and follow others to be more popular.-->
+    <!--</div>-->
+    <!--<div class='block-cards__card'>-->
+    <!--05-->
+    <!--Be active-->
+    <!--Post videos with your skills,-->
+    <!--Like and follow others to be more popular.-->
+    <!--</div>-->
+    <!--<div class='block-cards__card'>-->
+    <!--06-->
+    <!--Be active-->
+    <!--Post videos with your skills,-->
+    <!--Like and follow others to be more popular.-->
+    <!--</div>-->
 </section>
 
 <footer class='block block--footer'>
