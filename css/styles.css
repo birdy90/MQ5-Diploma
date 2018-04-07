@@ -46,14 +46,16 @@ h2 {
   line-height: 2.8rem;
 }
 
-html { background-image: url('../images/template/surface_320.jpg'); }
-body { opacity: 0.9; }
+/*html { */
+  /*background-image: url('../images/template/surface_320.jpg');*/
+/*}*/
+/*body { opacity: 0.9; }*/
 
 /* common block */
 
 .block {
   width: 100%;
-  max-width: 320px;
+  min-width: 320px;
 }
 
 .block__content {
@@ -66,9 +68,10 @@ body { opacity: 0.9; }
 /* header */
 
 .block-header {
-  color: white;
-  height: 568px;
   background-image: url('../images/football_s.png');
+  background-position: top center;
+  background-size: cover;
+  padding-bottom: 40px;
 }
 
 .block-header .block__content {
@@ -76,7 +79,9 @@ body { opacity: 0.9; }
 }
 
 .block-header__logo {
-  padding: 13px;
+  margin: 13px;
+  margin-left: -3px;
+  height: 36px;
 }
 
 .block-header__text {
@@ -85,6 +90,7 @@ body { opacity: 0.9; }
 }
 
 .block-header__text h2 {
+  color: white;
   margin-bottom: 25px;
 }
 
@@ -154,11 +160,23 @@ body { opacity: 0.9; }
 
 .row__pretitle {
   color: black;
-  display: inline-flex;
-  flex-basis: 25px;
+  display: flex;
   font-family: OpenSansBold, sans-serif;
   font-size: 1.4rem;
+  font-weight: 600;
   line-height: 1.4rem;
+  margin-right: 10px;
+}
+
+.row__pretitle::after {
+  background-color: #5e42b0;
+  border-radius: 2px;
+  bottom: 0;
+  content: ' ';
+  height: 4px;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .row__title {
@@ -167,7 +185,6 @@ body { opacity: 0.9; }
 }
 
 .row__title-image {
-  position: absolute;
   z-index: 10;
 }
 
@@ -190,12 +207,22 @@ body { opacity: 0.9; }
   color: white;
 }
 
+.thesis-block .row:nth-child(3) .row__pretitle::after {
+  background-color: white;
+}
+
+
 /* athletes */
 
 /* players */
 
 .block-players .row:nth-child(3) {
+  background-color: #090c35;
   padding-bottom: 55px;
+}
+
+.block-players .row:nth-child(3) .row__pretitle {
+  color: #8765dd
 }
 
 /* cards */
@@ -244,20 +271,116 @@ body { opacity: 0.9; }
   line-height: 2rem;
 }
 
-.block-cards__card-title-image {
-  height: 351px;
+.block-cards__card-title {
+  height: 315px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* mobile screens */
-
-@media screen and (max-width: 320px) {
+.card-01 .block-cards__card-title {
+  background-image: url('../images/cards_1_s.jpg');
 }
 
-.block-athletes .row__title-image {
-  left: 45px;
+.card-02 .block-cards__card-title {
+  background-image: url('../images/cards_2_s.jpg');
 }
 
-.block-players .row__title-image {
-  left: -20px;
-  top: 60px;
+.card-03 .block-cards__card-title {
+  background-image: url('../images/cards_3_s.jpg');
+}
+
+/* footer */
+
+.block-footer {
+  background-image: url('../images/footer_s.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.block-footer .block__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+  padding-bottom: 0;
+}
+
+.block-footer__logo-icon {
+  background: linear-gradient(to bottom, #7755d7, #50369a);
+  border-radius: 16px;
+  display: flex;
+  height: 72px;
+  margin: 60px;
+  width: 72px;
+}
+
+.block-footer__logo-icon-img {
+  height: 100%;
+  padding: 12px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.block-footer__title {
+  color: white;
+  font-family: OpenSansBold, sans-serif;
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.block-footer__text {
+  color: #9b8ec1;
+  font-family: OpenSansRegular, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  line-height: 1rem;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.block-footer__logo {
+  margin-left: -10px;
+  margin-bottom: 5px;
+  margin-top: 70px;
+  height: 36px;
+}
+
+/* screens */
+
+@media screen and (max-width: 640px) {
+  .thesis-block .block__title {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .thesis-block .block__title h1 {
+    align-self: flex-start;
+  }
+
+  .block-athletes .row__title-image {
+    margin-bottom: -85px;
+    margin-left: 10px;
+  }
+
+  .block-players .row__title-image {
+    margin-top: 10px;
+    margin-bottom: -50px;
+    margin-left: -20px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 960px) {
+}
+
+@media screen and (min-width: 961px) and (max-width: 1920px) {
 }
