@@ -23,7 +23,6 @@
 
 html, body {
   font-family: OpenSansRegular, sans-serif;
-  min-height: 320px;
   width: 100%;
   
   font-size: 10px;
@@ -46,10 +45,19 @@ h2 {
   line-height: 2.8rem;
 }
 
-/*html { */
-  /*background-image: url('../images/template/surface_320.jpg');*/
-/*}*/
-/*body { opacity: 0.9; }*/
+/*html { background-image: url('../images/template/surface_desktop.jpg'); background-position: top center; }*/
+/*body { opacity: 0.7; }*/
+
+svg g {
+  stroke: white;
+}
+svg path {
+  stroke: white;
+}
+
+svg path:not([stroke-width]) {
+  fill: white;
+}
 
 /* common block */
 
@@ -89,16 +97,25 @@ h2 {
   margin-bottom: 65px;
 }
 
-.block-header__text h2 {
+.block-header__text span {
   color: white;
+  display: block;
+  font-family: OpenSansBold, sans-serif;
+  font-size: 2.8rem;
+  line-height: 2.8rem;
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
-.block-header__text h2:nth-child(2){
+.block-header__text span:nth-child(2){
   margin-left: 45px;
 }
 
 /* store buttons */
+
+.store-buttons-wrapper {
+  width: 100%;
+}
 
 .store-button {
   background-color: #5e42b0;
@@ -380,7 +397,485 @@ h2 {
 }
 
 @media screen and (min-width: 641px) and (max-width: 960px) {
+  html, body { 
+    font-size: 11px;
+  }
+
+  .block-header {
+    background-image: url('../images/football_m.jpg');
+  }
+  
+  .block-header__logo {
+    margin: 18px;
+    margin-left: 5px;
+    height: 56px;
+  }
+
+  .block-header__text {
+    margin-left: 65px;
+    margin-top: 150px;
+    margin-bottom: 65px;
+  }
+
+  .block-header__text span {
+    font-size: 5.85rem;
+    line-height: 6.9rem;
+    letter-spacing: 3px;
+    color: white;
+    margin-bottom: 2px;
+  }
+
+  .block-header__text span:nth-child(2){
+    margin-left: 105px;
+  }
+  
+  .store-buttons-wrapper {
+    display: flex;
+    margin: 90px;
+    margin-top: 200px;
+    margin-bottom: 0;
+    padding: 20px;
+  }
+
+  .store-button {
+    background-color: #5e42b0;
+    border-radius: calc(77px / 2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 77px;
+    margin: 15px;
+    width: 100%;
+  }
+  
+  .store-button__inner-wrapper {
+    width: calc(100% - 80px);
+  }
+  
+  .store-button__icon {
+    height: 42px;
+    margin-right: 25px;
+    width: 42px;
+  }
+  
+  .store-button__icon--google {
+    margin-left: 17px;
+  }
+  
+  .store-button-text {
+    font-size: 1.3rem;
+    margin-top: 2px;
+  }
+
+  .thesis-block h1 {
+    font-size: 7rem;
+    height: auto;
+    margin-top: 63px;
+  }
+
+  .thesis-block .block__title {
+    flex-basis: 0;
+  }
+
+  .row {
+    padding: 40px 0;
+  }
+  
+  .block-athletes .block__content,
+  .block-athletes .row {
+    padding-left: 290px;
+    padding-right: 30px;
+  }
+
+  .block-players .block__content,
+  .block-players .row {
+    padding-left: 30px;
+    padding-right: 310px;
+  }
+
+  .block-athletes .row__title-image {
+    position: absolute;
+    left: -465px;
+    top: -50px;
+    width: 510px;
+  }
+
+  .block-players .row__title-image {
+    position: absolute;
+    left: 300px;
+    top: -100px;
+    width: 690px;
+  }
+  
+  .row p {
+    font-size: 1.36rem;
+    letter-spacing: 1.25px;
+    line-height: 2.6rem;
+  }
+  
+  .block-athletes .row:nth-child(1) {
+    background-color: transparent;
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+  
+  .block-athletes .row:nth-child(3) {
+    padding-bottom: 60px;
+  }
+  
+  .block-players .row:nth-child(1) {
+    background-color: transparent;
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+  
+  .block-players .row:nth-child(2) {
+    padding-top: 70px;
+    padding-bottom: 65px;
+  }
+  
+  .block-players .row:nth-child(3) {
+    padding-top: 57px;
+    padding-bottom: 50px;
+  }
+  
+  .block-cards__card-title {
+    height: 585px;
+  }
+
+  .card-01 .block-cards__card-title {
+    background-image: url('../images/cards_1_m.jpg');
+  }
+
+  .card-02 .block-cards__card-title {
+    background-image: url('../images/cards_2_m.jpg');
+  }
+
+  .card-03 .block-cards__card-title {
+    background-image: url('../images/cards_3_m.jpg');
+  }
+  
+  .block-cards__title-counter-block {
+    bottom: -30px;
+    height: 116px;
+    left: 30px;
+    width: 116px;
+  }
+
+  .block-cards__title-counter-block--number {
+    font-size: 2.5rem;
+  }
+
+  .block-cards__title-counter-block--underline {
+    height: 4px;
+    width: 23px;
+  }
+  
+  .block-cards__title {
+    font-size: 7.4rem;
+    padding-top: 70px;
+  }
+  
+  .block-cards__card:nth-child(1) .block-cards__title {
+    padding-top: 80px;
+  }
+
+  .block-cards__card .block__content {
+    padding: 30px;
+    padding-bottom: 65px;
+  }
+
+  .block-cards__card:nth-child(2) .block__content {
+    padding-bottom: 70px;
+  }
+
+  .block-cards__card:nth-child(3) .block__content {
+    padding-bottom: 80px;
+  }
+  
+  .block-cards__text {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    padding: 30px 0;
+  }
+
+  .block-footer {
+    background-image: url('../images/footer_m.jpg');
+  }
+  
+  .block-footer__logo-icon {
+    height: 137px;
+    width: 130px;
+    border-radius: 30px;
+    margin: 92px;
+  }
+  
+  .block-footer__logo-icon-img {
+    padding: 17px;
+  }
+  
+  .block-footer__title {
+    font-size: 7.1rem;
+    line-height: 3.4rem;
+    margin-bottom: 47px;
+  }
+  
+  .block-footer__text {
+    font-size: 3.2rem;
+  }
+  
+  .block-footer .store-buttons-wrapper {
+    margin-top: 182px;
+  }
+  
+  .block-footer__logo {
+    margin-bottom: 21px;
+    margin-left: 0px;
+    margin-top: 20px;
+    height: 56px;
+  }
 }
 
 @media screen and (min-width: 961px) and (max-width: 1920px) {
+
+  .block-header {
+    background-image: url('../images/football_l.jpg');
+    padding-bottom: 55px;
+  }
+  
+  .block-header__logo {
+    margin: 25px;
+    margin-left: -12px;
+    height: 50px;
+  }
+
+  .block-header__text {
+    padding: 160px;
+    padding-top: 140px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .block-header__text span {
+    font-size: 9rem;
+    line-height: 9rem;
+    letter-spacing: 4px;
+    margin-bottom: 2px;
+  }
+
+  .block-header__text span:nth-child(2){
+    margin-left: 450px;
+  }
+  
+  .store-buttons-wrapper {
+    display: flex;
+    flex-grow: 0;
+    justify-content: center;
+    margin: 90px;
+    margin-bottom: 0;
+    padding: 20px;
+    padding-right: 25px;
+  }
+
+  .store-button__inner-wrapper {
+    margin-left: -35px;
+    width: auto;
+  }
+
+  .store-button {
+    background-color: #5e42b0;
+    border-radius: calc(77px / 2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 77px;
+    flex-basis: 310px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    margin: 15px 25px;
+  }
+  
+  .store-button__icon {
+    height: 50px;
+    margin-right: 20px;
+    margin-top: -5px;
+    width: 50px;
+  }
+  
+  .store-button-text {
+    font-size: 1.4rem;
+  }
+  
+  .thesis-block .block__title {
+    flex-basis: 0;
+    padding-bottom: 40px;
+  }
+  
+  .thesis-block h1 {
+    font-size: 8rem;
+    margin-top: 95px;
+  }
+  
+  .thesis-block .row__pretitle {
+    font-size: 1.8rem;
+  }
+  
+  .thesis-block .row__title {
+    font-size: 3.6rem;
+  }
+  
+  .block__row {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .block-athletes .block__content,
+  .block-athletes .row {
+    padding-left: 1000px;
+    padding-right: 200px;
+  }
+
+  .block-players .block__content,
+  .block-players .row {
+    padding-left: 315px;
+    padding-right: 977px;
+  }
+
+  .block-athletes .row__title-image {
+    position: absolute;
+    left: -740px;
+    top: -200px;
+    width: 730px;
+  }
+
+  .block-players .row__title-image {
+    position: absolute;
+    left: 480px;
+    top: -195px;
+    width: 990px;
+  }
+
+  .row p {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+  }
+
+  .block-athletes .row:nth-child(1) {
+    background-color: transparent;
+    padding-top: 45px;
+    padding-bottom: 65px;
+  }
+
+  .block-athletes .row:nth-child(3) {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+  
+  .block-players .row:nth-child(1) {
+    background-color: transparent;
+    padding-top: 45px;
+    padding-bottom: 65px;
+  }
+
+  .block-players .row:nth-child(2) {
+    padding-top: 65px;
+    padding-bottom: 75px;
+  }
+
+  .block-players .row:nth-child(3) {
+    padding-top: 103px;
+    padding-bottom: 90px;
+  }
+
+  .block-cards__card-title {
+    height: 585px;
+  }
+  
+  .block-cards__card {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 730px;
+    width: 100%;
+  }
+  
+  .block-cards__card:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  
+  .block-cards__card:nth-child(2) .block__content {
+    padding-left: 185px;
+  }
+  
+  .block-cards__card-title {
+    height: 100%;
+    width: 50%;
+  }
+  
+  .block-cards__title-counter-block {
+    left: 100%;
+    height: 155px;
+    margin-left: -85px;
+    top: 215px;
+    width: 168px;
+    z-index: 10;
+  }
+
+  .block-cards__card:nth-child(2) .block-cards__title-counter-block {
+    left: 0;
+    right: 100%;
+    margin-right: -85px;
+  }
+  
+  .block-cards__title-counter-block--number {
+    font-size: 2.4rem;
+    margin-top: -12px;
+  }
+  
+  .block-cards__title-counter-block--underline {
+    width: 22px;
+  }
+  
+  .block-cards .block__content {
+    padding: 128px;
+    width: 50%;
+  }
+  
+  .block-cards__title {
+    font-size: 8rem;
+    margin-top: 155px;
+    margin-bottom: 140px;
+  }
+
+  .block-cards__card:nth-child(2) .block-cards__title {
+    margin-bottom: 100px;
+  }
+  
+  .block-cards__text {
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+  }
+  
+  
+  
+  
+  
+  
+  .card-01 .block-cards__card-title {
+    background-image: url('../images/cards_1_l.jpg');
+  }
+
+  .card-02 .block-cards__card-title {
+    background-image: url('../images/cards_2_l.jpg');
+  }
+
+  .card-03 .block-cards__card-title {
+    background-image: url('../images/cards_3_l.jpg');
+  }
+
+  .block-footer {
+    background-image: url('../images/footer_l.jpg');
+  }
 }
