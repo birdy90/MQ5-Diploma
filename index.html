@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Surface</title>
 
-    <link href='./css/styles.css' rel='stylesheet' type='text/css' />
+    <link href='./css/styles.css?v=1' rel='stylesheet' type='text/css' />
 </head>
 <body>
 
@@ -61,23 +61,20 @@
     <div class='block__content block-list'>
         <div class='block__title'>
             <h1>Athletes</h1>
-            <picture>
+            <picture class='row__title-image-wrapper'>
                 <source media="screen and (min-width: 641px) and (max-width: 960px)" srcset='./images/athletes_m.png'>
-                <source media="screen and (min-width: 961px) and (max-width: 1920px)" srcset='./images/athletes_l.png'>
+                <source media="screen and (min-width: 961px)" srcset='./images/athletes_l.png'>
                 <img class='row__title-image' src='./images/athletes_s.png' />
             </picture>
         </div>
     </div>
-</section>
-
-<!-- разделение для того, чтобы нумерация блоков была с 0 -->
-<section class='block thesis-block block-athletes'>
+    
     <div class='row block__row'>
         <div class='row__title-line'>
             <div class='row__pretitle'>01</div>
             <h2 class='row__title'>Connection</h2>
         </div>
-        <p>Connect with coaches directly, you can ping coaches to view profile.</p>
+        <p>Connect with coaches directly, you can ping coaches to.</p>
     </div>
     <div class='row block__row'>
         <div class='row__title-line'>
@@ -99,17 +96,14 @@
     <div class='block__content block-list'>
         <div class='block__title'>
             <h1>Players</h1>
-            <picture>
+            <picture class='row__title-image-wrapper'>
                 <source media="screen and (min-width: 641px) and (max-width: 960px)" srcset='./images/players_m.png'>
-                <source media="screen and (min-width: 961px) and (max-width: 1920px)" srcset='./images/players_l.png'>
+                <source media="screen and (min-width: 961px)" srcset='./images/players_l.png'>
                 <img class='row__title-image' src='./images/players_s.png' />
             </picture>
         </div>
     </div>
-</section>
-
-<!-- разделение для того, чтобы нумерация блоков была с 0 -->
-<section class='block thesis-block block-players'>
+    
     <div class='row block__row'>
         <div class='row__title-line'>
             <div class='row__pretitle'>01</div>
@@ -143,7 +137,7 @@
         </div>
         <div class='block__content'>
             <h2 class='block-cards__title'>Be active</h2>
-            <p class='block-cards__text'>Post videos with your skills, like and follow others to be more popular.</p>
+            <p class='block-cards__text'>Post videos with your skills, like and follow others to be more more popular.</p>
         </div>
     </div>
 
@@ -177,19 +171,23 @@
 
 <footer class='block block-footer'>
     <div class='block__content'>
-        <div class='block-footer__logo-icon'>
-            <svg class='block-footer__logo-icon-img' viewBox="0 0 288 264" xmlns="http://www.w3.org/2000/svg">
-                <g stroke="#000" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke-width="25" d="M275 132L103 251V13z" />
-                    <g stroke-width="16" >
-                        <path d="M42.5 99h107M42.5 169h107M8 135h168"/>
+        <div class='block-footer_content-wrapper'>
+            <div class='block-footer__logo-icon'>
+                <svg class='block-footer__logo-icon-img' viewBox="0 0 288 264" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke="#000" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke-width="25" d="M275 132L103 251V13z" />
+                        <g stroke-width="16" >
+                            <path d="M42.5 99h107M42.5 169h107M8 135h168"/>
+                        </g>
                     </g>
-                </g>
-            </svg>
+                </svg>
+            </div>
+
+            <div class='block-footer_text-wrapper'>
+                <div class='block-footer__title'>Download app</div>
+                <div class='block-footer__text'>Show everyone what you can do!</div>
+            </div>
         </div>
-        
-        <div class='block-footer__title'>Download app</div>
-        <div class='block-footer__text'>Show everyone what you can do!</div>
 
         <div class='store-buttons-wrapper'>
             <div class='store-button'>
