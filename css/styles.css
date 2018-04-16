@@ -34,17 +34,17 @@ body {
   align-items: center;
 }
 
-h1, h2 {
+h2, h3 {
   font-family: OpenSansBold, sans-serif;
   text-transform: uppercase;
 }
 
-h1 {
+h2 {
   color: #e7e7e7;
   font-size: 5rem;
 }
 
-h2 {
+h3 {
   color: #c1c1c1;
   font-size: 2.8rem;
 }
@@ -435,7 +435,7 @@ svg path:not([stroke-width]) {
     display: flex;
   }
 
-  .thesis-block .block__title h1 {
+  .thesis-block .block__title h2 {
     align-self: flex-start;
     line-height: 6rem;
   }
@@ -542,7 +542,7 @@ svg path:not([stroke-width]) {
     line-height: 1.4rem;
   }
 
-  .thesis-block h1 {
+  .thesis-block h2 {
     font-size: 8rem;
     height: auto;
     margin-top: 40px;
@@ -626,7 +626,7 @@ svg path:not([stroke-width]) {
     padding-bottom: 60px;
   }
   
-  .block-players .block__title h1 {
+  .block-players .block__title h2 {
     margin-top: 37px;
   }
   
@@ -837,7 +837,7 @@ svg path:not([stroke-width]) {
     flex-basis: 0;
   }
   
-  .thesis-block h1 {
+  .thesis-block h2 {
     font-size: 8rem;
     margin-top: 65px;
   }
