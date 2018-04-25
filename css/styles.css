@@ -762,6 +762,18 @@ svg path:not([stroke-width]) {
   }
 }
 
+@media screen and (min-width: 641px) and (max-width: 740px) {
+  
+  .store-button__inner-wrapper {
+    justify-content: center;
+    width: calc(100% - 40px);
+  }
+  
+  .store-button__icon--google {
+    margin-left: 0;
+  }
+}
+
 @media screen and (min-width: 961px) {
 
   .block-header {
