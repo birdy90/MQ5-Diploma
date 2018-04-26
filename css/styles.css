@@ -766,7 +766,7 @@ svg path:not([stroke-width]) {
   
   .store-button__inner-wrapper {
     justify-content: center;
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
   }
   
   .store-button__icon--google {
